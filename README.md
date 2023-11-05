@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import sliceDimensionFrom from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-slice-dimension-from@esm/index.mjs';
+import sliceDimensionFrom from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-slice-dimension-from@v0.1.0-esm/index.mjs';
 ```
 
 #### sliceDimensionFrom( x, dim, start\[, options] )
@@ -159,7 +159,7 @@ arr = ndarray2array( y );
 import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@esm/index.mjs';
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
 import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@esm/index.mjs';
-import sliceDimensionFrom from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-slice-dimension-from@esm/index.mjs';
+import sliceDimensionFrom from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-slice-dimension-from@v0.1.0-esm/index.mjs';
 
 // Create a linear ndarray buffer:
 var buf = zeroTo( 27 );
