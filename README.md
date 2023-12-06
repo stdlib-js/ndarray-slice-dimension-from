@@ -227,6 +227,7 @@ var a3 = ndarray2array( y3 );
 -   <span class="package-name">[`@stdlib/ndarray-slice`][@stdlib/ndarray/slice]</span><span class="delimiter">: </span><span class="description">return a read-only view of an input ndarray.</span>
 -   <span class="package-name">[`@stdlib/ndarray-slice-dimension`][@stdlib/ndarray/slice-dimension]</span><span class="delimiter">: </span><span class="description">return a read-only view of an input ndarray when sliced along a specified dimension.</span>
 -   <span class="package-name">[`@stdlib/ndarray-slice-dimension-to`][@stdlib/ndarray/slice-dimension-to]</span><span class="delimiter">: </span><span class="description">return a read-only truncated view of an input ndarray along a specific dimension.</span>
+-   <span class="package-name">[`@stdlib/ndarray-slice-from`][@stdlib/ndarray/slice-from]</span><span class="delimiter">: </span><span class="description">return a read-only shifted view of an input ndarray.</span>
 
 </section>
 
@@ -312,6 +313,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [@stdlib/ndarray/slice-dimension]: https://github.com/stdlib-js/ndarray-slice-dimension
 
 [@stdlib/ndarray/slice-dimension-to]: https://github.com/stdlib-js/ndarray-slice-dimension-to
+
+[@stdlib/ndarray/slice-from]: https://github.com/stdlib-js/ndarray-slice-from
 
 <!-- </related-links> -->
 
