@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-slice-dimension-from
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import sliceDimensionFrom from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-slice-dimension-from@deno/mod.js';
+var sliceDimensionFrom = require( '@stdlib/ndarray-slice-dimension-from' );
 ```
 
 #### sliceDimensionFrom( x, dim, start\[, options] )
@@ -60,8 +78,8 @@ import sliceDimensionFrom from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-sl
 Returns a **read-only** shifted view of an input [`ndarray`][@stdlib/ndarray/ctor] along a specified dimension.
 
 ```javascript
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@deno/mod.js';
+var ndarray = require( '@stdlib/ndarray-ctor' );
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
 
 var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
 var shape = [ 3, 2 ];
@@ -101,8 +119,8 @@ The function supports the following `options`:
 By default, the function throws an error when provided a starting index which exceeds array bounds. To return an empty array when a starting index exceeds array bounds, set the `strict` option to `false`.
 
 ```javascript
-import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ctor@deno/mod.js';
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@deno/mod.js';
+var ndarray = require( '@stdlib/ndarray-ctor' );
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
 
 var buffer = [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ];
 var shape = [ 3, 2 ];
@@ -151,10 +169,10 @@ arr = ndarray2array( y );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-array@deno/mod.js';
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@deno/mod.js';
-import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@deno/mod.js';
-import sliceDimensionFrom from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-slice-dimension-from@deno/mod.js';
+var array = require( '@stdlib/ndarray-array' );
+var ndarray2array = require( '@stdlib/ndarray-to-array' );
+var zeroTo = require( '@stdlib/array-base-zero-to' );
+var sliceDimensionFrom = require( '@stdlib/ndarray-slice-dimension-from' );
 
 // Create a linear ndarray buffer:
 var buf = zeroTo( 27 );
@@ -226,7 +244,7 @@ var a3 = ndarray2array( y3 );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -243,7 +261,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -289,19 +307,19 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-slice-dimension-from/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/deno
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
 <!-- <related-links> -->
 
-[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array/tree/deno
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array
 
-[@stdlib/ndarray/slice]: https://github.com/stdlib-js/ndarray-slice/tree/deno
+[@stdlib/ndarray/slice]: https://github.com/stdlib-js/ndarray-slice
 
-[@stdlib/ndarray/slice-dimension]: https://github.com/stdlib-js/ndarray-slice-dimension/tree/deno
+[@stdlib/ndarray/slice-dimension]: https://github.com/stdlib-js/ndarray-slice-dimension
 
-[@stdlib/ndarray/slice-dimension-to]: https://github.com/stdlib-js/ndarray-slice-dimension-to/tree/deno
+[@stdlib/ndarray/slice-dimension-to]: https://github.com/stdlib-js/ndarray-slice-dimension-to
 
-[@stdlib/ndarray/slice-from]: https://github.com/stdlib-js/ndarray-slice-from/tree/deno
+[@stdlib/ndarray/slice-from]: https://github.com/stdlib-js/ndarray-slice-from
 
 <!-- </related-links> -->
 
